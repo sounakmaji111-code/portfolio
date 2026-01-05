@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #0b1a2d, #02040a);
+  color: #e5f2ff;
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 30px;
+  background: rgba(5, 15, 30, 0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #00ffb2;
+}
+
+.navbar nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #cfe8ff;
+  transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+  color: #00ffb2;
+}
+
+/* SECTIONS */
+.section {
+  padding: 100px 10%;
+}
+
+.hero {
+  padding-top: 140px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2rem;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  color: #00ffb2;
+}
+
+.sub {
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #5fdcff;
+}
+
+/* SKILLS */
+.skills span {
+  display: inline-block;
+  margin: 8px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background: rgba(0,255,178,0.1);
+  border: 1px solid #00ffb2;
+}
+
+/* TIMELINE */
+.journey {
+  background: rgba(0,0,0,0.25);
+}
+
+.timeline {
+  position: relative;
+  margin-top: 40px;
+}
+
+.line {
+  position: absolute;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(#00ffb2, #0099ff);
+  transform: translateX(-50%);
+}
+
+.event {
+  width: 45%;
+  padding: 20px;
+  background: rgba(10, 30, 60, 0.6);
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.event.left {
+  margin-left: 0;
+}
+
+.event.right {
+  margin-left: 55%;
+}
+
+.event h3 {
+  color: #00ffb2;
+}
+
+/* PROJECTS */
+.project-note {
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: rgba(0, 40, 80, 0.6);
+  padding: 25px;
+  border-radius: 12px;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: default;
+}
+
+.project-card span {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  font-size: 1.5rem;
+  opacity: 0.6;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px rgba(0,255,178,0.4);
+}
+
+/* CONTACT */
+#contact p {
+  margin-bottom: 8px;
+}
